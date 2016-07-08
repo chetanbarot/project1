@@ -1,0 +1,12 @@
+.button{
+  
+  font-weight: bold;
+  height:40px;
+  width:100px;
+  text-align: center;
+}
+
+.gameboard {
+    width: 318px;
+    height:315px;
+    border:3px solid blue;
