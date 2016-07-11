@@ -16,7 +16,8 @@
      max-height: 8px;*/ 
      
      text-align: center;
-     line-height: 100px               
+     line-height: 100px  
+
  }
 
  .gameboard div {
@@ -28,6 +29,7 @@
  }
  .box {
   background: steelblue;
+
  }
  /*.box,.box,.box {
      width:100px;
@@ -49,10 +51,10 @@
  }*/
 
  .timer{
-  height:1200px;
-  margin:auto;
-  font-weight:bold;
-  text-align: center;
+  /*width: 1020px;*/
+  /*margin:auto;*/
+  /*font-weight:bold;*/
+  align: center;
   line-height: 10px
   
  }
@@ -62,6 +64,8 @@
   background-image: url(coffeeimg/BlackSheepfront.png);
   background-size: cover;
   margin: 10px;
+  border-radius: 50%;
+
 }
 
 .front {
@@ -116,15 +120,29 @@
 #myBar {
     position: absolute;
     width: 0%;
-    height: 50%;
-    background-color: green;
+    height: 100%;
+    background-color: #6F4E37;
 }
 
 
 #bottom-bar {
   clear: both;
+
 }
 
+body {
+  background-image: url('http://wallpapercave.com/wp/60P9094.jpg');
+ /* background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: top;*/
+}
+h1{
+  text-align: center;
+  color:white;
+  
+
+}
 
 
 
