@@ -1,9 +1,10 @@
+// generated a gameboard
 var gameboard =document.getElementById('gameboard');
-
+// generated a bottom-bar
 var base=document.getElementById('bottom-bar');
-
+// generated a  alert box
 var alert=document.getElementById('alertbox');
-
+// what to be displayed when the page loads
 window.onload = function(){
   gameboard.style.display="none";
   base.style.display="none";
@@ -25,7 +26,7 @@ var choices = [1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11,12];
 
     buttons[i].setAttribute("value", value);
 }
-
+// generated a progress bar
 var progressBar = document.getElementById("myBar");
 
 var box1;
@@ -34,7 +35,7 @@ var click1 = 0;
 var click2 = 0;
 var score = 0;
 
-
+// function for the game play
 function listenForClick(){
   for(var i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', function() {
@@ -52,7 +53,7 @@ function listenForClick(){
    });
   }
 }
-
+// function for checking the match
 function checkForMatch(){
   if(click1 === click2){
     score++;
@@ -72,7 +73,7 @@ function checkForMatch(){
   click2 = 0;
 }
 
-
+// created a timer for the game and also alert pop ups for when the timer goes off and reset the game.
 var seconds = 90;
 
   function secondPassed() {
@@ -96,7 +97,7 @@ var seconds = 90;
         seconds--;
     }
 }
-
+// created a function to show the progress of the game on the progress bar
 function increaseTheBar(){
 
   if (score === 1) {
@@ -130,7 +131,7 @@ function increaseTheBar(){
     document.getElementById('myBar').innerHTML ="Hurray!! You Earned 20% Discount"
   }
 }
-
+// generated the restard butoon and the functions that would affect the restart button
 var restart = document.getElementById("restart");
 var squares = document.getElementsByClassName("square");
 
@@ -150,14 +151,13 @@ var squares = document.getElementsByClassName("square");
   click2 = 0;
   score = 0;
 }
-
+// created a welcome box that would be displayed on the start on the load of the page.
 var divElement = document.createElement("Div");
 divElement.id = "welcome-box";
 
 // Styling it
 divElement.style.textAlign = "center";
 divElement.style.fontWeight = "bold";
-// divElement.style.fontSize = "smaller";
 divElement.style.paddingTop = "15px";
 
 var welcomeBox =
@@ -170,7 +170,7 @@ var welcomeBox =
 // Appending the div element to body
 document.getElementsByTagName("body")[0].appendChild(divElement);
 
-
+// created a play button to store data of email address(at the moment does not store data)and prgoress in the game
 var playGame = document.getElementById("playGame");
 
     playGame.addEventListener("click", function(){
@@ -182,7 +182,7 @@ var playGame = document.getElementById("playGame");
       var countdownTimer = setInterval('secondPassed()', 1000);
 
     })
-
+// created a a end box which is acting as a pop up.
 var end = document.getElementById("end");
 
   end.addEventListener("click", function(){
